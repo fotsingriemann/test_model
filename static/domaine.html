@@ -1,0 +1,54 @@
+<html>    
+
+    <style>
+        body{
+            text-align: center;
+            justify-content: center;
+            font-size: 50px;
+            color: white;
+            font-family: consolas;
+            background-color: darkblue;
+        }
+
+        .tomtom{
+            border-radius: 40px;
+            box-shadow: 8 50 50 8 black;
+        }
+
+        input[type="submit"]{
+            font-size: 30px;
+            padding-top: 15px;
+        }
+
+        input[type="file"]{
+            font-size: 30px;
+            padding-top: 15px;
+        }
+    </style>
+
+
+    <head>  <title> Chargement du fichier </title>  </head>
+
+
+    <body>
+        <h1> LE  CLIENT ENEO </h1>
+
+        <div class="tomtom">
+            <form method="post" action="http://localhost:8000/envoi_fichier/" enctype="multipart/form-data">
+
+
+                <input type="file" name="file">
+                
+                <input type="submit" value="Valider"><br><br>
+                <textarea rows="10" cols="100" name="area"></textarea>
+
+
+            </form>
+        </div>
+
+
+
+    </body>
+
+
+</html>
