@@ -47,6 +47,15 @@ see the hello world example like this:
 Deploy it in the server
 ===============
     build the image
-      $ sudo docker build -t django-model_ml .
+      $ sudo docker build -t test_de_mon_model .
     Deploy the container
-      $ sudo docker run --name model_ml -p 8000:8000 django-model_ml
+      $ sudo docker run --name model_ml -p 8000:8000 test_de_mon_model
+
+
+Redeploy if the modification on files
+===============
+
+    rebuild the image
+      $ sudo docker build -t test_de_mon_model .
+    Deploy the container
+      $ sudo docker run --name model_ml -p 8000:8000 test_de_mon_model
