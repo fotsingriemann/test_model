@@ -1,0 +1,12 @@
+version: '2.2'
+
+services:
+  model_ml:
+    image: test_de_mon_model
+    container_name: model_ml
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app  # Monte le répertoire actuel dans /app du conteneur (si nécessaire)
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+
